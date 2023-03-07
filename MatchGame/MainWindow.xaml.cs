@@ -21,7 +21,7 @@ namespace MatchGame
     /// </summary>
     public partial class MainWindow : Window
     {
-        DispatcherTimer timer = new DispatcherTimer();
+        readonly DispatcherTimer timer = new();
         int tenthOfSecondsElapsed;
         int matchesFound;
 
@@ -44,9 +44,11 @@ namespace MatchGame
                 timer.Stop();
                 timeTextBlock.Text += " - nice!!!";
 
+                #region Dialog window with buttons
                 string sMessageBoxText = "Do you want to continue?";
                 string sCaption = "Match animals";
 
+                
                 MessageBoxButton btnMessageBox = MessageBoxButton.YesNoCancel;
                 MessageBoxImage icnMessageBox = MessageBoxImage.Warning;
 
@@ -68,6 +70,7 @@ namespace MatchGame
                         Application.Current.Shutdown();
                         break;
                 }
+                #endregion
             }
         }
 
@@ -96,6 +99,7 @@ namespace MatchGame
                 //"🐎", "🐎"
             };
 
+            #region Entered textBlocks random animals
             foreach (TextBlock textBlock in mainGrid.Children.OfType<TextBlock>()) 
             {
                 textBlock.Visibility = Visibility.Visible;
@@ -109,6 +113,7 @@ namespace MatchGame
                 }
                 
             }
+            #endregion
 
             timer.Start();
             tenthOfSecondsElapsed = 0;
@@ -118,6 +123,7 @@ namespace MatchGame
         TextBlock? lastTextBlockClicked;
         bool findingMatch = false;
 
+        #region Main game logic
         private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
         {
             TextBlock? textBlock = sender as TextBlock;
@@ -139,5 +145,6 @@ namespace MatchGame
                 findingMatch = false;
             }
         }
+        #endregion
     }
 }
