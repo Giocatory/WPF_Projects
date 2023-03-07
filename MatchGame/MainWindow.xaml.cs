@@ -42,7 +42,32 @@ namespace MatchGame
             if (matchesFound == 8)
             {
                 timer.Stop();
-                timeTextBlock.Text += " - Play again?";
+                timeTextBlock.Text += " - nice!!!";
+
+                string sMessageBoxText = "Do you want to continue?";
+                string sCaption = "Match animals";
+
+                MessageBoxButton btnMessageBox = MessageBoxButton.YesNoCancel;
+                MessageBoxImage icnMessageBox = MessageBoxImage.Warning;
+
+                MessageBoxResult rsltMessageBox = MessageBox.Show(sMessageBoxText, sCaption, btnMessageBox, icnMessageBox);
+
+                switch (rsltMessageBox)
+                {
+                    case MessageBoxResult.Yes:
+                        SetupGame();
+                        break;
+
+                    case MessageBoxResult.No:
+                        MessageBox.Show("До новых встреч!!!");
+                        Application.Current.Shutdown();
+                        break;
+
+                    case MessageBoxResult.Cancel:
+                        MessageBox.Show("До новых встреч!!!");
+                        Application.Current.Shutdown();
+                        break;
+                }
             }
         }
 
@@ -56,7 +81,7 @@ namespace MatchGame
 
         private void SetupGame()
         {
-            Random random = new Random();
+            Random random = new();
 
             List<string> animalEmoji = new() 
             {
@@ -73,6 +98,7 @@ namespace MatchGame
 
             foreach (TextBlock textBlock in mainGrid.Children.OfType<TextBlock>()) 
             {
+                textBlock.Visibility = Visibility.Visible;
                 if(textBlock.Name != "timeTextBlock")
                 {
                     int count = animalEmoji.Count - 1;
