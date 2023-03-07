@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 
 namespace MatchGame
 {
+    using System.Windows.Threading;
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -22,8 +23,21 @@ namespace MatchGame
     {
         public MainWindow()
         {
+            DispatcherTimer timer = new DispatcherTimer();
+            int tenthOfSecondsElapsed;
+            int matchesFound;
+
             InitializeComponent();
+
+            timer.Interval = TimeSpan.FromSeconds(.1);
+            timer.Tick += Timer_Tick;
+
             SetupGame();
+        }
+
+        private void Timer_Tick(object? sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void SetupGame()
@@ -53,7 +67,7 @@ namespace MatchGame
             }
         }
 
-        TextBlock lastTextBlockClicked;
+        TextBlock? lastTextBlockClicked;
         bool findingMatch = false;
 
         private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
