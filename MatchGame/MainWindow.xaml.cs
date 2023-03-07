@@ -1,29 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace MatchGame
 {
     using System.Windows.Threading;
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        readonly DispatcherTimer timer = new();
-        int tenthOfSecondsElapsed;
-        int matchesFound;
+        private readonly DispatcherTimer timer = new();
+        private int tenthOfSecondsElapsed;
+        private int matchesFound;
 
         public MainWindow()
         {
@@ -45,10 +38,10 @@ namespace MatchGame
                 timeTextBlock.Text += " - nice!!!";
 
                 #region Dialog window with buttons
+
                 string sMessageBoxText = "Do you want to continue?";
                 string sCaption = "Match animals";
 
-                
                 MessageBoxButton btnMessageBox = MessageBoxButton.YesNoCancel;
                 MessageBoxImage icnMessageBox = MessageBoxImage.Warning;
 
@@ -70,7 +63,8 @@ namespace MatchGame
                         Application.Current.Shutdown();
                         break;
                 }
-                #endregion
+
+                #endregion Dialog window with buttons
             }
         }
 
@@ -86,7 +80,7 @@ namespace MatchGame
         {
             Random random = new();
 
-            List<string> animalEmoji = new() 
+            List<string> animalEmoji = new()
             {
                 "🐎", "🐎",
                 "🐘", "🐘",
@@ -100,10 +94,11 @@ namespace MatchGame
             };
 
             #region Entered textBlocks random animals
-            foreach (TextBlock textBlock in mainGrid.Children.OfType<TextBlock>()) 
+
+            foreach (TextBlock textBlock in mainGrid.Children.OfType<TextBlock>())
             {
                 textBlock.Visibility = Visibility.Visible;
-                if(textBlock.Name != "timeTextBlock")
+                if (textBlock.Name != "timeTextBlock")
                 {
                     int count = animalEmoji.Count - 1;
                     int index = random.Next(count);
@@ -111,19 +106,20 @@ namespace MatchGame
                     textBlock.Text = nextEmoji;
                     animalEmoji.RemoveAt(index);
                 }
-                
             }
-            #endregion
+
+            #endregion Entered textBlocks random animals
 
             timer.Start();
             tenthOfSecondsElapsed = 0;
             matchesFound = 0;
         }
 
-        TextBlock? lastTextBlockClicked;
-        bool findingMatch = false;
+        private TextBlock? lastTextBlockClicked;
+        private bool findingMatch = false;
 
         #region Main game logic
+
         private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
         {
             TextBlock? textBlock = sender as TextBlock;
@@ -145,6 +141,7 @@ namespace MatchGame
                 findingMatch = false;
             }
         }
-        #endregion
+
+        #endregion Main game logic
     }
 }

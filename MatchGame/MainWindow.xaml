@@ -14,10 +14,10 @@
     mc:Ignorable="d" Foreground="#FF170276">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-            <GradientStop Color="#FF7F7CF7"/>
-            <GradientStop Color="#FFFBFF4A" Offset="1"/>
-            <GradientStop Color="#FFB9B9A5" Offset="0.471"/>
-            <GradientStop Color="#FEBABBA2" Offset="0.484"/>
+            <GradientStop Color="#FF7F7CF7" />
+            <GradientStop Color="#FFFBFF4A" Offset="1" />
+            <GradientStop Color="#FFB9B9A5" Offset="0.471" />
+            <GradientStop Color="#FEBABBA2" Offset="0.484" />
         </LinearGradientBrush>
     </Window.Background>
     <Grid x:Name="mainGrid">
@@ -161,9 +161,7 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             FontSize="36"
-            
+
             Text="Elapsed time" MouseDown="TimeTextBlock_MouseDown" />
-
     </Grid>
-
 </Window>
