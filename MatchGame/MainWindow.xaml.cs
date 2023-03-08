@@ -22,6 +22,11 @@ namespace MatchGame
         {
             InitializeComponent();
 
+            
+        }
+
+        private void Start_game_Click()
+        {
             timer.Interval = TimeSpan.FromSeconds(.1);
             timer.Tick += Timer_Tick;
 
@@ -143,5 +148,10 @@ namespace MatchGame
         }
 
         #endregion Main game logic
+
+        private void Start_game_Click(object sender, RoutedEventArgs e)
+        {
+            Start_game_Click();
+        }
     }
 }

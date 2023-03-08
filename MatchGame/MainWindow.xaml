@@ -9,15 +9,16 @@
     Width="400"
     Height="450"
     FontSize="36"
+    Foreground="#FF170276"
     Icon="/logotype2.png"
     WindowStartupLocation="CenterScreen"
-    mc:Ignorable="d" Foreground="#FF170276">
+    mc:Ignorable="d">
     <Window.Background>
-        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
             <GradientStop Color="#FF7F7CF7" />
-            <GradientStop Color="#FFFBFF4A" Offset="1" />
-            <GradientStop Color="#FFB9B9A5" Offset="0.471" />
-            <GradientStop Color="#FEBABBA2" Offset="0.484" />
+            <GradientStop Offset="1" Color="#FFFBFF4A" />
+            <GradientStop Offset="0.471" Color="#FFB9B9A5" />
+            <GradientStop Offset="0.484" Color="#FEBABBA2" />
         </LinearGradientBrush>
     </Window.Background>
     <Grid x:Name="mainGrid">
@@ -33,6 +34,7 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
+            <RowDefinition Height="auto                            " />
         </Grid.RowDefinitions>
 
         <!--  First Row  -->
@@ -161,7 +163,18 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             FontSize="36"
+            MouseDown="TimeTextBlock_MouseDown"
+            Text="Elapsed time" />
 
-            Text="Elapsed time" MouseDown="TimeTextBlock_MouseDown" />
+        <Button
+            x:Name="Start_game"
+            Grid.Row="5"
+            Grid.ColumnSpan="4"
+            Width="auto"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="#FF7CFF4D"
+            Content="Start game"
+            FontSize="36" Click="Start_game_Click" />
     </Grid>
 </Window>
