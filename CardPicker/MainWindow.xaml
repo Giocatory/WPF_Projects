@@ -1,9 +1,8 @@
 ﻿<Window
     x:Class="CardPicker.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:local="clr-namespace:CardPicker"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="Card picker"
     Width="600"
@@ -16,33 +15,39 @@
             <ColumnDefinition Width="1*" />
         </Grid.ColumnDefinitions>
 
-        <Label
-            Height="50"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Top"
-            Content="Сколько выбрать  карт?"
-            FontSize="25" />
-        <TextBlock
-            x:Name="cardsNumber"
-            Margin="102,87,102,110"
-            FontSize="16"
-            Text="Число карт"
-            TextAlignment="Center" />
-        <Slider
-            x:Name="sliderPickCard"
-            Width="250"
-            Height="25"
-            Margin="0,50,0,0"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Top"
-            Maximum="36"
-            Minimum="1"
-            ValueChanged="sliderPickCard_ValueChanged" />
-
-        <Button
-            Margin="10,140,10,30"
-            Content="Выбрать карты"
-            FontSize="20" Click="Button_Click" />
+        <StackPanel>
+            <Label
+                Height="50"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Content="Сколько выбрать  карт?"
+                FontSize="25" />
+            <TextBlock
+                x:Name="cardsNumber"
+                FontSize="16"
+                Text="Число карт"
+                TextAlignment="Center" />
+            <Slider
+                x:Name="sliderPickCard"
+                Width="250"
+                Height="25"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                VerticalContentAlignment="Center"
+                Background="White"
+                BorderBrush="#FFEA0E0E"
+                Foreground="#FF080606"
+                IsSnapToTickEnabled="True"
+                Maximum="36"
+                Minimum="1"
+                TickPlacement="BottomRight"
+                ValueChanged="sliderPickCard_ValueChanged" />
+            <Button
+                Margin="0,10,0,0"
+                Click="Button_Click"
+                Content="Выбрать карты"
+                FontSize="20" />
+        </StackPanel>
 
         <ListBox x:Name="cardsList" Grid.Column="1" />
     </Grid>
