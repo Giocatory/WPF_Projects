@@ -21,8 +21,6 @@ namespace MatchGame
         public MainWindow()
         {
             InitializeComponent();
-
-            
         }
 
         private void Start_game_Click()
