@@ -174,7 +174,8 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Background="#FF7CFF4D"
+            Click="Start_game_Click"
             Content="Start game"
-            FontSize="36" Click="Start_game_Click" />
+            FontSize="36" />
     </Grid>
 </Window>
