@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatchGame", "MatchGame\MatchGame.csproj", "{85B56C33-549E-445A-B9AF-98EE517C849A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExperimentWithControls", "ExperimentWithControls\ExperimentWithControls.csproj", "{BF3EFFC7-54E9-4C87-8AB3-F640C3505833}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExperimentWithControls", "ExperimentWithControls\ExperimentWithControls.csproj", "{BF3EFFC7-54E9-4C87-8AB3-F640C3505833}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PickRandomCards", "PickRandomCards\PickRandomCards.csproj", "{654FCA2C-E0D6-4EA9-AAF2-7F698A61A48B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BF3EFFC7-54E9-4C87-8AB3-F640C3505833}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF3EFFC7-54E9-4C87-8AB3-F640C3505833}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF3EFFC7-54E9-4C87-8AB3-F640C3505833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{654FCA2C-E0D6-4EA9-AAF2-7F698A61A48B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{654FCA2C-E0D6-4EA9-AAF2-7F698A61A48B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{654FCA2C-E0D6-4EA9-AAF2-7F698A61A48B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{654FCA2C-E0D6-4EA9-AAF2-7F698A61A48B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
