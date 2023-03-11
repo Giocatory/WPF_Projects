@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExperimentWithControls", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PickRandomCards", "PickRandomCards\PickRandomCards.csproj", "{654FCA2C-E0D6-4EA9-AAF2-7F698A61A48B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardPicker", "CardPicker\CardPicker.csproj", "{D52D93DC-BE11-4665-998C-42F5B3E9C429}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{654FCA2C-E0D6-4EA9-AAF2-7F698A61A48B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{654FCA2C-E0D6-4EA9-AAF2-7F698A61A48B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{654FCA2C-E0D6-4EA9-AAF2-7F698A61A48B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D52D93DC-BE11-4665-998C-42F5B3E9C429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D52D93DC-BE11-4665-998C-42F5B3E9C429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D52D93DC-BE11-4665-998C-42F5B3E9C429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D52D93DC-BE11-4665-998C-42F5B3E9C429}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
