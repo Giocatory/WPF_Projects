@@ -12,7 +12,7 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width=".5*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*" />
@@ -51,5 +51,115 @@
             TextChanged="numberTextBox_TextChanged"
             TextWrapping="Wrap" />
 
+        <RadioButton
+            Margin="180,49,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Checked="RadioButton_Checked"
+            Content="1"
+            GroupName="Radio_Buttons" />
+        <RadioButton
+            Margin="210,49,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Checked="RadioButton_Checked"
+            Content="2"
+            GroupName="Radio_Buttons" />
+        <RadioButton
+            Margin="240,49,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Checked="RadioButton_Checked"
+            Content="3"
+            GroupName="Radio_Buttons" />
+        <RadioButton
+            Margin="180,69,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Checked="RadioButton_Checked"
+            Content="4"
+            GroupName="Radio_Buttons" />
+        <RadioButton
+            Margin="210,69,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Checked="RadioButton_Checked"
+            Content="5"
+            GroupName="Radio_Buttons" />
+        <RadioButton
+            Margin="240,69,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Checked="RadioButton_Checked"
+            Content="6"
+            GroupName="Radio_Buttons" />
+
+        <ListBox
+            x:Name="myListBox"
+            Grid.Row="1"
+            Grid.Column="0"
+            Width="120"
+            Height="120"
+            Margin="10,8,403,45"
+            SelectionChanged="ListBox_SelectionChanged">
+            <ListBoxItem Content="1" />
+            <ListBoxItem Content="2" />
+            <ListBoxItem Content="3" />
+            <ListBoxItem Content="4" />
+            <ListBoxItem Content="5" />
+        </ListBox>
+
+        <ComboBox
+            x:Name="readOnlyComboBox"
+            Grid.Row="1"
+            Grid.Column="0"
+            Height="30"
+            Margin="140,10,140,133"
+            IsReadOnly="True"
+            SelectionChanged="readOnlyComboBox_SelectionChanged">
+            <ListBoxItem Content="1" />
+            <ListBoxItem Content="2" />
+            <ListBoxItem Content="3" />
+            <ListBoxItem Content="4" />
+            <ListBoxItem Content="5" />
+        </ComboBox>
+        <ComboBox
+            x:Name="editableComboBox"
+            Grid.Row="1"
+            Grid.Column="0"
+            Margin="140,53,140,90"
+            IsEditable="True"
+            PreviewTextInput="numberTextBox_PreviewTextInput"
+            TextBoxBase.TextChanged="editableComboBox_TextChanged">
+
+            <ListBoxItem Content="1" />
+            <ListBoxItem Content="2" />
+            <ListBoxItem Content="3" />
+            <ListBoxItem Content="4" />
+            <ListBoxItem Content="5" />
+        </ComboBox>
+
+        <Slider
+            x:Name="smallSlider"
+            Grid.Row="2"
+            Width="120"
+            Margin="10,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            AutoToolTipPlacement="TopLeft"
+            Maximum="5"
+            Minimum="1"
+            ValueChanged="smallSlider_ValueChanged" />
+
+        <Slider
+            x:Name="bigSlider"
+            Grid.Row="2"
+            Grid.ColumnSpan="2"
+            Margin="40,44,40,0"
+            VerticalAlignment="Top"
+            AutoToolTipPlacement="TopLeft"
+            Maximum="9999999999"
+            Minimum="1111111111"
+            ValueChanged="Slider_ValueChanged" />
     </Grid>
 </Window>
