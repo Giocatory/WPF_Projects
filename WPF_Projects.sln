@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PickRandomCards", "PickRand
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardPicker", "CardPicker\CardPicker.csproj", "{D52D93DC-BE11-4665-998C-42F5B3E9C429}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuysCash", "GuysCash\GuysCash.csproj", "{B0F8450A-CB57-4504-B276-5572BFBC24EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuysCash", "GuysCash\GuysCash.csproj", "{B0F8450A-CB57-4504-B276-5572BFBC24EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbilityScoreTester", "AbilityScoreTester\AbilityScoreTester.csproj", "{EF7441B5-7E8A-4823-95D1-298722CC5BCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{B0F8450A-CB57-4504-B276-5572BFBC24EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0F8450A-CB57-4504-B276-5572BFBC24EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0F8450A-CB57-4504-B276-5572BFBC24EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF7441B5-7E8A-4823-95D1-298722CC5BCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF7441B5-7E8A-4823-95D1-298722CC5BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF7441B5-7E8A-4823-95D1-298722CC5BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF7441B5-7E8A-4823-95D1-298722CC5BCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
