@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatchGame", "MatchGame\Matc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExperimentWithControls", "ExperimentWithControls\ExperimentWithControls.csproj", "{BF3EFFC7-54E9-4C87-8AB3-F640C3505833}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PickRandomCards", "PickRandomCards\PickRandomCards.csproj", "{654FCA2C-E0D6-4EA9-AAF2-7F698A61A48B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PickRandomCards", "PickRandomCards\PickRandomCards.csproj", "{654FCA2C-E0D6-4EA9-AAF2-7F698A61A48B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardPicker", "CardPicker\CardPicker.csproj", "{D52D93DC-BE11-4665-998C-42F5B3E9C429}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardPicker", "CardPicker\CardPicker.csproj", "{D52D93DC-BE11-4665-998C-42F5B3E9C429}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuysCash", "GuysCash\GuysCash.csproj", "{B0F8450A-CB57-4504-B276-5572BFBC24EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D52D93DC-BE11-4665-998C-42F5B3E9C429}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D52D93DC-BE11-4665-998C-42F5B3E9C429}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D52D93DC-BE11-4665-998C-42F5B3E9C429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0F8450A-CB57-4504-B276-5572BFBC24EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0F8450A-CB57-4504-B276-5572BFBC24EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0F8450A-CB57-4504-B276-5572BFBC24EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0F8450A-CB57-4504-B276-5572BFBC24EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
