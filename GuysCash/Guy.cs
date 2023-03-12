@@ -21,7 +21,7 @@
         /// </summary>
         public void WriteMyInfo()
         {
-            Console.WriteLine($"{Name} has {Cash} bucks.");
+            Console.WriteLine($"{Name} имеет {Cash}р.");
         }
 
         /// <summary>
@@ -37,11 +37,11 @@
         {
             if (amount <= 0)
             {
-                Console.WriteLine($"{Name} says: {amount} isn't a valid amount");
+                Console.WriteLine($"{Name} говорит: {amount}р недействительная сумма");
             }
             if (amount > Cash)
             {
-                Console.WriteLine($"{Name} says: I don't have enough cash to give you {amount}");
+                Console.WriteLine($"{Name} говорит: У меня недостаточно денег, чтобы дать вам {amount}р");
                 return 0;
             }
             Cash -= amount;
@@ -57,7 +57,7 @@
         {
             if (amount <= 0)
             {
-                Console.WriteLine($"{Name} says: {amount} isn't an amount I'll take");
+                Console.WriteLine($"{Name} говорит: {amount}р это не та сумма, которую я возьму");
             }
             else
             {

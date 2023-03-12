@@ -6,10 +6,10 @@
         {
             var joe = new Guy()
             {
-                Name = "Joe",
+                Name = "Джо",
                 Cash = 50
             };
-            var bob = new Guy("Bob", 100);
+            var bob = new Guy("Боб", 100);
 
             while (true)
             {
@@ -17,7 +17,7 @@
                 joe.WriteMyInfo();
                 bob.WriteMyInfo();
 
-                Console.Write("Enter an amount: ");
+                Console.Write("Введите сумму: ");
                 string? howMuch = Console.ReadLine();
 
                 if (howMuch == "") return;
@@ -25,16 +25,16 @@
                 // (как это было сделано ранее в этой главе)
                 if (int.TryParse(howMuch, out int cash))
                 {
-                    Console.Write("Who should give the cash: ");
+                    Console.Write("Кто должен давать деньги: ");
                     string? whichGuy = Console.ReadLine();
-                    if (whichGuy == "Joe")
+                    if (whichGuy == "Джо")
                     {
                         // Вызовите метод GiveCash объекта joe и сохраните результат
                         joe.GiveCash(cash);
                         // Вызовите метод ReceiveCash объекта bob с сохраненным результатом
                         bob.ReceiveCash(cash);
                     }
-                    else if (whichGuy == "Bob")
+                    else if (whichGuy == "Боб")
                     {
                         // Вызовите метод GiveCash объекта bob и сохраните результат
                         bob.GiveCash(cash);
@@ -43,12 +43,12 @@
                     }
                     else
                     {
-                        Console.WriteLine("Please enter 'Joe' or 'Bob'");
+                        Console.WriteLine("Пожалуйста, введите 'Джо' или 'Боб'");
                     }
                 }
                 else
                 {
-                    Console.WriteLine("Please enter an amount (or a blank line to exit).");
+                    Console.WriteLine("Пожалуйста, введите сумму (или пустую строку для выхода).");
                 }
             }
         }
