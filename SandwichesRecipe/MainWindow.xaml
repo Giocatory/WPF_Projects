@@ -75,15 +75,16 @@
             Grid.Row="5"
             Grid.Column="1"
             Text="X" />
-        <TextBlock
-            x:Name="guacamole"
-            Grid.Row="6"
-            Grid.ColumnSpan="2"
-            Width="300"
-            Margin="230,0,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Bottom"
-            Text="X"
-            TextAlignment="Center" />
+        <StackPanel Grid.Row="6" Grid.ColumnSpan="2">
+            <TextBlock
+                x:Name="guacamole"
+                Width="300"
+                Margin="230,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Text="X"
+                TextAlignment="Center" />
+            <Button Width="250" Content="Generate" Click="Button_Click" />
+        </StackPanel>
     </Grid>
 </Window>

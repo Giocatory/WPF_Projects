@@ -74,5 +74,10 @@ namespace SandwichesRecipe
             guacamole.Text = $"Add guacamole for {guacomoleMenuItem.Price}";
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MakeTheMenu();
+        }
     }
 }
