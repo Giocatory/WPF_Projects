@@ -1,19 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SandwichesRecipe
 {
-    class MenuItem
+    internal class MenuItem
     {
         public Random Randomizer = new();
 
         // Белки
         public string[] Proteins = { "Жареная говядина", "Салями", "Индейка", "Ветчина", "Макароны", "Тофу" };
+
         // Приправы
         public string[] Condiments = { "Желтая горчица", "Коричневая горчица", "Медовая горчица", "Майонез", "Соевый соус", "Сырный соус" };
+
         // Хлебы
         public string[] Breads = { "Ржаной", "Белый", "Пшеничный", "Пампушка", "Багет" };
 

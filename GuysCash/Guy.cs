@@ -8,7 +8,9 @@
         // Цепочка констуркторов
         public Guy() : this(string.Empty, 0) { }
 
-        public Guy(string name) : this(name, 0) { }
+        public Guy(string name) : this(name, 0)
+        {
+        }
 
         public Guy(string name, int cash)
         {

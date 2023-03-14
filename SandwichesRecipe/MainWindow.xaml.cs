@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace SandwichesRecipe
 {
@@ -28,6 +16,8 @@ namespace SandwichesRecipe
 
         private void MakeTheMenu()
         {
+            Debug.WriteLine("application started");
+
             MenuItem[] menuItems = new MenuItem[6];
             string guacomolePrice = string.Empty;
 
@@ -56,7 +46,7 @@ namespace SandwichesRecipe
             item5.Text = menuItems[4].Description;
             price5.Text = menuItems[4].Price;
 
-            MenuItem specialMenuItem = new MenuItem() 
+            MenuItem specialMenuItem = new MenuItem()
             {
                 Proteins = new string[] { "Органическая ветчина", "Грибная котлета", "Мортаделла" },
                 Breads = new string[] { "ролл без глютена", "пита", "лаваш" },
@@ -72,7 +62,6 @@ namespace SandwichesRecipe
             guacomolePrice = guacomoleMenuItem.Price;
 
             guacamole.Text = $"Add guacamole for {guacomoleMenuItem.Price}";
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
