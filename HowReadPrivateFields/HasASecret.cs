@@ -10,5 +10,6 @@ namespace HowReadPrivateFields
     {
         private readonly string secret = "secret phraze";
         private int lengthSecretPhraze = 5;
+        public int HowManyVars { private get; set; } = 2;
     }
 }

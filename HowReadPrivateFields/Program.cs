@@ -16,6 +16,7 @@ namespace HowReadPrivateFields
             }
             // Variable name: secret; Variable value: secret phraze
             // Variable name: lengthSecretPhraze; Variable value: 5
+            // Variable name: <HowManyVars>k__BackingField; Variable value: 2
         }
     }
 }
