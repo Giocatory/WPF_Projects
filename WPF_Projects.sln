@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuysCash", "GuysCash\GuysCa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SandwichesRecipe", "SandwichesRecipe\SandwichesRecipe.csproj", "{F849C7B1-3801-4077-8C7A-D2E6C5718417}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiloGameConsole", "HiloGameConsole\HiloGameConsole.csproj", "{484C71BB-80B1-400C-A098-348CE4ABD8BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiloGameConsole", "HiloGameConsole\HiloGameConsole.csproj", "{484C71BB-80B1-400C-A098-348CE4ABD8BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowReadPrivateFields", "HowReadPrivateFields\HowReadPrivateFields.csproj", "{A2021FC7-9AA9-4B8E-8FEA-6EC90B3EB4BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HowReadPrivateFields", "HowReadPrivateFields\HowReadPrivateFields.csproj", "{A2021FC7-9AA9-4B8E-8FEA-6EC90B3EB4BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeaponsFireInheritance", "WeaponsFireInheritance\WeaponsFireInheritance.csproj", "{7A4AB6EE-D900-4DC2-B016-98DF21F66D74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{A2021FC7-9AA9-4B8E-8FEA-6EC90B3EB4BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2021FC7-9AA9-4B8E-8FEA-6EC90B3EB4BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2021FC7-9AA9-4B8E-8FEA-6EC90B3EB4BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A4AB6EE-D900-4DC2-B016-98DF21F66D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A4AB6EE-D900-4DC2-B016-98DF21F66D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A4AB6EE-D900-4DC2-B016-98DF21F66D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A4AB6EE-D900-4DC2-B016-98DF21F66D74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
