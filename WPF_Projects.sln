@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardPicker", "CardPicker\Ca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuysCash", "GuysCash\GuysCash.csproj", "{B0F8450A-CB57-4504-B276-5572BFBC24EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandwichesRecipe", "SandwichesRecipe\SandwichesRecipe.csproj", "{F849C7B1-3801-4077-8C7A-D2E6C5718417}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SandwichesRecipe", "SandwichesRecipe\SandwichesRecipe.csproj", "{F849C7B1-3801-4077-8C7A-D2E6C5718417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiloGameConsole", "HiloGameConsole\HiloGameConsole.csproj", "{484C71BB-80B1-400C-A098-348CE4ABD8BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{F849C7B1-3801-4077-8C7A-D2E6C5718417}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F849C7B1-3801-4077-8C7A-D2E6C5718417}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F849C7B1-3801-4077-8C7A-D2E6C5718417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{484C71BB-80B1-400C-A098-348CE4ABD8BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{484C71BB-80B1-400C-A098-348CE4ABD8BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{484C71BB-80B1-400C-A098-348CE4ABD8BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{484C71BB-80B1-400C-A098-348CE4ABD8BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
