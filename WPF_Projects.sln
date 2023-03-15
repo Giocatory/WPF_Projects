@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SandwichesRecipe", "Sandwic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiloGameConsole", "HiloGameConsole\HiloGameConsole.csproj", "{484C71BB-80B1-400C-A098-348CE4ABD8BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowReadPrivateFields", "HowReadPrivateFields\HowReadPrivateFields.csproj", "{A2021FC7-9AA9-4B8E-8FEA-6EC90B3EB4BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{484C71BB-80B1-400C-A098-348CE4ABD8BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{484C71BB-80B1-400C-A098-348CE4ABD8BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{484C71BB-80B1-400C-A098-348CE4ABD8BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2021FC7-9AA9-4B8E-8FEA-6EC90B3EB4BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2021FC7-9AA9-4B8E-8FEA-6EC90B3EB4BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2021FC7-9AA9-4B8E-8FEA-6EC90B3EB4BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2021FC7-9AA9-4B8E-8FEA-6EC90B3EB4BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
