@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.WriteLine("Hello Hilo game");
             Console.WriteLine($"Guess number between 1 and {HiloGame.MAXIMUM}");
@@ -16,15 +16,16 @@
 
                 char key = Console.ReadKey(true).KeyChar;
 
-                switch(key)
+                switch (key)
                 {
-                    case 'h': 
+                    case 'h':
                         HiloGame.Guess(true); break;
                     case 'l':
                         HiloGame.Guess(false); break;
                     case '?':
                         HiloGame.Hint();
                         break;
+
                     default:
                         return;
                 }

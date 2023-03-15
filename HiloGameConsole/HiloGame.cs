@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HiloGameConsole
 {
-    static class HiloGame
+    internal static class HiloGame
     {
         public const int MAXIMUM = 10;
         private static Random random = new();
@@ -19,7 +19,7 @@ namespace HiloGameConsole
             Console.WriteLine($"Enter your guessed from 1 to {MAXIMUM}: ");
             string? playerChoice = Console.ReadLine();
             int player = int.TryParse(playerChoice, out int result) ? result : 0;
-            if (higher && player >= currentNumber) 
+            if (higher && player >= currentNumber)
             {
                 Console.WriteLine($"You guessed right!");
                 GetPot += 3;
@@ -40,7 +40,7 @@ namespace HiloGameConsole
             {
                 Console.WriteLine($"The number is at least {half}");
             }
-            else 
+            else
             {
                 Console.WriteLine($"The number is at most {half}");
                 GetPot -= 5;
