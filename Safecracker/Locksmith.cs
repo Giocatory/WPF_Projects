@@ -11,7 +11,7 @@
 
         public string Combination { private get; set; }
 
-        internal void ReturnContents(string safeContents, SafeOwner owner)
+        internal virtual void ReturnContents(string safeContents, SafeOwner owner)
         {
             owner.ReceiveContents(safeContents);
         }
