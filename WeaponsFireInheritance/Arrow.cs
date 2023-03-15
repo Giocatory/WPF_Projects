@@ -1,6 +1,6 @@
 ﻿namespace WeaponsFireInheritance
 {
-    internal class Arrow : Weapon
+    internal sealed class Arrow : Weapon
     {
         public Arrow(string title, string description) : base(title, description)
         {
