@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Arrow smallArrow = new Arrow("Маленький лук", "дальний бой");
             Sword claymore = new Sword("Двуручный меч", "Ближний бой");
